@@ -1,6 +1,6 @@
 // Colors
-$default-color: #555 !default;
-$default-shade: #353535 !default;
+$default-color: #111 !default;
+$default-shade: #222 !default;
 $default-tint: #aaa !default;
 $grey-1: #979797 !default;
 $grey-2: #e5e5e5 !default;
@@ -12,7 +12,7 @@ $code-color: #bf616a !default;
 
 // Fonts
 $serif-primary: "Source Serif Pro", 'Times New Roman', Times, "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei UI", "Microsoft YaHei", '微软雅黑', '思源黑体', SYHT, "WenQuanYi Micro Hei", serif !default;
-$serif-secondary: Palatino, 'Palatino LT STD', 'Palatino Linotype', 'Book Antiqua', 'Georgia', serif !default;
+$serif-secondary: $serif-primary !default;
 $sans-serif: 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif !default;
 $monospaced: Menlo, Monaco, monospace !default;
 $code-font: 400 1.125rem/1.75 SFMono-Regular, Consolas, Liberation Mono,Menlo, monospace;
