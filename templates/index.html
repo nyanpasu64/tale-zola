@@ -20,11 +20,13 @@
 
 
 {% block content %}
-<div class="post" style="padding-bottom: 0px;">
-	<h1 class="post-title">{{ home }}</h1>
-	<div class="post-line"></div>
-	{{ section.content | safe }}
-</div>
+{% if not paginator.previous -%}
+	<div class="post" style="padding-bottom: 0px;">
+		<h1 class="post-title">{{ home }}</h1>
+		<div class="post-line"></div>
+		{{ section.content | safe }}
+	</div>
+{% endif %}
 {% if paginator.pages %}
 	<div class="catalogue">
 		{% for page in paginator.pages -%}
@@ -33,13 +35,13 @@
 	</div>
 	<div class="pagination">
 		{% if paginator.previous -%}
-			<a href="{{ paginator.previous | safe }}" class="left arrow">&#8592;</a>
+			<a href="{{ paginator.previous | safe }}" class="left arrow">&#8592; Newer</a>
 		{%- endif %}
 		{% if paginator.previous or paginator.next -%}
 			<span>{{ paginator.current_index }}</span>
 		{%- endif %}
 		{% if paginator.next -%}
-			<a href="{{ paginator.next | safe }}" class="right arrow">&#8594;</a>
+			<a href="{{ paginator.next | safe }}" class="right arrow">Older &#8594;</a>
 		{%- endif %}
 	</div>
 {% endif %}
