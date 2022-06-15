@@ -15,7 +15,7 @@ $serif-primary: "Source Serif Pro", 'Times New Roman', Times, "Helvetica Neue", 
 $serif-secondary: $serif-primary !default;
 $sans-serif: 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif !default;
 $monospaced: Menlo, Monaco, monospace !default;
-$code-font: 400 1.125rem/1.75 SFMono-Regular, Consolas, Liberation Mono,Menlo, monospace;
+$code-font: $monospaced;
 
 @mixin box-sizing($type: border-box) {
   -webkit-box-sizing: $type;
