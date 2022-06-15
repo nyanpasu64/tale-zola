@@ -1,27 +1,3 @@
-{%- macro time() -%}
-  {%- if config.extra.footer.start_year -%}
-  	{%- set start_year = config.extra.footer.start_year -%}
-  {%- else -%}
-  	{%- set start_year = now() | date(format="%Y") -%}
-  {%- endif -%}
-  
-  {%- if config.extra.footer.end_year -%}
-  	{%- set end_year = config.extra.footer.end_year -%}
-  {%- else -%}
-  	{%- set end_year = now() | date(format="%Y") -%}
-  {%- endif -%}
-  
-  {%- if start_year == end_year -%}
-  	{%- set year = start_year -%}
-  {%- else -%}
-  	{%- set year = start_year ~ "-" ~ end_year -%}
-  {%- endif -%}
-
-  <time datetime="{{ now() }}">{{ year }}</time>
-{%- endmacro -%}
-
-
-
 {% macro page(page) -%}
 <a href="{{ page.permalink | safe }}" class="catalogue-item">
   <div>
