@@ -14,6 +14,7 @@ html {
   font-family: $serif-primary;
   font-size: 14px;
   overflow-y: scroll;
+  overflow-wrap: break-word;
 
   @media (min-width: 600px) {
     font-size: 15px;
