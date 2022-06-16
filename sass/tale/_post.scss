@@ -37,14 +37,18 @@
 
   // My old modified Jekyll Minima blog gives all block text elements (headings,
   // paragraphs, lists, etc.) 15px of bottom margin only. This is close enough I guess.
-  h1, h2, h3, h4, h5, h6 {
-    margin-top: 25px;
+  h1, h2 {
+    margin-top: 18px;
     margin-bottom: 15px;
     // Should I denote in rem so it grows with font size (which is larger on phones)?
     // Probably not, I don't want *more* whitespace on mobile.
   }
+  h3, h4, h5, h6 {
+    margin-top: 18px;
+    margin-bottom: 10px;
+  }
 
-  p {
+  p, ul, ol {
     margin: 0 0 15px;
     // text-align: justify;
   }
