@@ -9,8 +9,8 @@ $grey-3: #f9f9f9 !default;
 $white: #fff !default;
 $blue: #2a7ae2 !default;
 $shadow-color: rgba(0, 0, 0, .2) !default;
-$code-bg: #f4f2f0 !default;
-$code-color: #481010 !default;
+$code-bg: #f0f0f0 !default;
+$code-color: $default-color !default;
 
 // Fonts
 $serif-primary: "Source Serif 4", "Source Serif Pro", 'Times New Roman', Times, "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei UI", "Microsoft YaHei", '微软雅黑', '思源黑体', SYHT, "WenQuanYi Micro Hei", serif !default;
