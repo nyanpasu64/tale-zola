@@ -22,7 +22,9 @@ footer,
   overflow: auto;
 
   &-container {
-    margin: 1rem auto;
+    // Add more room above than below text, to make it look visually centered.
+    // https://tonsky.me/blog/font-size/#the-endgame
+    margin: 1.05rem auto 0.85rem;
     position: relative;
     text-align: center;
   }
@@ -71,15 +73,17 @@ footer,
 }
 
 @media (min-width: $desktop-min) {
-  .nav {
-    &-container {
-      text-align: left;
+  .nav-container {
+    text-align: left;
+    display: flex;
+    align-items: center;
+
+    :first-child {
+      margin-right: auto;
     }
 
     ul {
-      bottom: 0;
-      position: absolute;
-      right: 0;
+      margin: 0;
     }
   }
 }
