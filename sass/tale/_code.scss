@@ -1,12 +1,14 @@
 pre,
 code {
   font-family: $monospaced;
+  // In <pre><code> blocks, we must set font-size at <pre> rather than nested <code>,
+  // since <pre>'s font size determines <code>'s line height.
+  font-size: 85%;
 }
 
 code {
   background-color: $code-bg;
   border-radius: 4px;
-  font-size: 85%;
   padding: 2px 5px;
 }
 
@@ -15,10 +17,12 @@ pre {
   border-radius: 4px;
   padding: 8px 12px 10px;
   overflow: auto;
+  // line-height: 1.5;
 }
 
 pre code {
   background-color: transparent;
+  font-size: unset;
   color: inherit;
   border: 0;
   padding: 0;
