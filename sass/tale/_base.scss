@@ -12,12 +12,12 @@ body {
 
 html {
   font-family: $serif-primary;
-  font-size: 14px;
+  font-size: 15px;
   overflow-y: scroll;
   overflow-wrap: break-word;
 
   @media (min-width: $desktop-min) {
-    font-size: 15px;
+    // font-size: 15px;
   }
 }
 
