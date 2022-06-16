@@ -7,17 +7,17 @@ body {
   color: $default-color;
   margin: 0;
   padding: 0;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 html {
   font-family: $serif-primary;
-  font-size: 15px;
+  font-size: 20px;
   overflow-y: scroll;
   overflow-wrap: break-word;
 
   @media (min-width: $desktop-min) {
-    // font-size: 15px;
+    font-size: 18px;
   }
 }
 

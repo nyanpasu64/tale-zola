@@ -3,7 +3,15 @@ code {
   font-family: $monospaced;
   // In <pre><code> blocks, we must set font-size at <pre> rather than nested <code>,
   // since <pre>'s font size determines <code>'s line height.
-  font-size: 85%;
+  font-size: 75%;
+}
+
+h1, h2, h3 {
+  pre, code {
+    // Sans-serif headings appear larger than Crimson Pro body text at a given font size,
+    // so don't reduce font size of code blocks as much.
+    font-size: 95%;
+  }
 }
 
 code {
