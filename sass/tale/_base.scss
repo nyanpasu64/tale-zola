@@ -16,7 +16,7 @@ html {
   overflow-y: scroll;
   overflow-wrap: break-word;
 
-  @media (min-width: 600px) {
+  @media (min-width: $desktop-min) {
     font-size: 15px;
   }
 }
@@ -51,7 +51,7 @@ blockquote {
     margin-bottom: 0;
   }
 
-  @media (min-width: 600px) {
+  @media (min-width: $desktop-min) {
     padding: 0 5rem 0 1.25rem;
   }
 }

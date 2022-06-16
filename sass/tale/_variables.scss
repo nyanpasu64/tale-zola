@@ -29,3 +29,6 @@ $monospaced: Menlo, Monaco, "DejaVu Sans Mono", Consolas, monospace !default;
      -moz-transition: $args;
           transition: $args;
 }
+
+// Layout
+$desktop-min: 600px;
