@@ -1,7 +1,16 @@
 .catalogue {
   &-item {
     border-bottom: 1px solid $grey-2;
-    color: $default-color;
+
+    // CSS is so hacky... it conflates selecting and prioritizing rules. Overriding the
+    // color of `a:visited` outweighs class-level colors but not nested class colors.
+    // Supposedly https://css-tricks.com/css-cascade-layers/
+    // (https://developer.mozilla.org/en-US/docs/Web/CSS/@layer) fixes it. But only very
+    // recent browsers support it.
+    &, &:visited {
+      color: $default-color;
+    }
+
     display: block;
     padding: 2rem 0;
 
