@@ -7,9 +7,10 @@ code {
 }
 
 code {
-  background-color: $code-bg;
   border-radius: 4px;
   padding: 2px 5px;
+  color: $code-color;
+  background-color: $code-bg;
 }
 
 pre {
