@@ -1,5 +1,5 @@
 .post {
-  padding: 3rem 0;
+  padding: 0rem 0;
 
   &-title {
     color: $default-shade;
@@ -23,8 +23,15 @@
   &-line {
     border-top: 0.4rem solid $default-shade;
     display: block;
-    margin: 0.5rem auto 3rem;
+    margin: 0.5rem auto 1.5rem;
     width: 4rem;
+  }
+
+  @media (min-width: $desktop-min) {
+    padding: 1.5rem 0;
+    &-line {
+      margin: 0.5rem auto 2rem;
+    }
   }
 
   // // Text appears above the center of its bounding box. Decrease the lower margin to 60%,
