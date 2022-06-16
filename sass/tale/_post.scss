@@ -27,8 +27,25 @@
     width: 4rem;
   }
 
+  // // Text appears above the center of its bounding box. Decrease the lower margin to 60%,
+  // // to make headers look more balanced.
+  // //
+  // // See https://browserdefaultstyles.com/#h for default margins.
+  // h1 { margin-bottom: 0.4em; }  // default 0.67 = 0.666...
+  // h2 { margin-bottom: 0.5em; }  // default 0.83 = 0.833...
+  // h3 { margin-bottom: 0.6em; }  // default 1
+
+  // My old modified Jekyll Minima blog gives all block text elements (headings,
+  // paragraphs, lists, etc.) 15px of bottom margin only. This is close enough I guess.
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    // Should I denote in rem so it grows with font size (which is larger on phones)?
+    // Probably not, I don't want *more* whitespace on mobile.
+  }
+
   p {
-    margin: 0 0 1rem;
+    margin: 0 0 15px;
     // text-align: justify;
   }
 
