@@ -22,7 +22,7 @@ code {
 }
 
 pre {
-  margin: 0 0 1rem;
+  margin: 0 0 $margin-bottom;
   border-radius: 4px;
   padding: 8px 12px 10px;
   overflow: auto;
@@ -41,7 +41,7 @@ pre code {
   background-color: $grey-3;
   border-radius: 3px;
   line-height: 1.4;
-  margin: 0 0 1rem;
+  margin: 0 0 $margin-bottom;
   padding: 1rem;
 
   pre {
