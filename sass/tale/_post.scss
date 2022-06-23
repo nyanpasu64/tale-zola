@@ -57,6 +57,11 @@
     margin: 0 0 $margin-bottom;
     // text-align: justify;
   }
+  ul, ol {
+    ul, ol {
+      margin-bottom: 0;
+    }
+  }
 
   a:hover {
     text-decoration: underline;
