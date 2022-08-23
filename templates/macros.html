@@ -142,25 +142,25 @@
 <script type="application/ld+json">
 {
   "author": {
-    "@type":"Person",
-	  "name":"{{ author }}",
-  },
-  "description": "{{description }}",
-  "url": "{{ site_url | safe }}",
-  "@context":"https://schema.org",
-  "@type": "{{ web_type }}",
-  "headline": "{{ og_title }}"
+    "@type":"Person"
+    ,"name":"{{ author }}"
+  }
+  ,"description": "{{description }}"
+  ,"url": "{{ site_url | safe }}"
+  ,"@context":"https://schema.org"
+  ,"@type": "{{ web_type }}"
+  ,"headline": "{{ og_title }}"
   {% if page %}
     {% if page.updated %}
-      "dateModified":"{{ page.updated | date(format="%+") }}",
+      ,"dateModified":"{{ page.updated | date(format="%+") }}"
     {% endif %}
     {% if page.date %}
-      "datePublished":"{{ page.date | date(format="%+") }}",
+      ,"datePublished":"{{ page.date | date(format="%+") }}"
     {% endif %}
-    "mainEntityOfPage":{
-      "@type":"WebPage",
-      "@id":"{{ site_url | safe }}"
-    },
+    ,"mainEntityOfPage":{
+      "@type":"WebPage"
+      ,"@id":"{{ site_url | safe }}"
+    }
   {% endif %}
 }
 </script>
