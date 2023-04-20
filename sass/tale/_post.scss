@@ -61,9 +61,11 @@
       margin-left: -20px;
       line-height: 1;
 
-      visibility: hidden;
+      & > div {
+        visibility: hidden;
+      }
     }
-    &:hover .zola-anchor {
+    &:hover .zola-anchor > div {
       visibility: visible;
     }
   }
