@@ -56,17 +56,32 @@
   h1, h2, h3, h4, h5, h6 {
     .zola-anchor {
       float: left;
-      margin-left: -22px;
+      margin-left: -5px;
       padding-right: 6px;
       line-height: 1;
 
       > span {
         font-size: 16px;
-        visibility: hidden;
       }
     }
-    &:hover .zola-anchor > span {
-      visibility: visible;
+  }
+
+  // main has max-width: 800px, and the anchor extends 22px to the left
+  // of main. At window widths below 844px, there are under 22 pixels of
+  // room to the left of main, and the anchor will extend off-screen if
+  // we place it there. So move it on-screen.
+  @media (min-width: 844px) {
+    h1, h2, h3, h4, h5, h6 {
+      .zola-anchor {
+        margin-left: -22px;
+
+        > span {
+          visibility: hidden;
+        }
+      }
+      &:hover .zola-anchor > span {
+        visibility: visible;
+      }
     }
   }
 
