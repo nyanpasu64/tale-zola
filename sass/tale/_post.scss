@@ -55,17 +55,17 @@
 
   h1, h2, h3, h4, h5, h6 {
     & .zola-anchor {
-      // todo
       float: left;
-      padding-right: 4px;
-      margin-left: -20px;
+      margin-left: -22px;
+      padding-right: 6px;
       line-height: 1;
 
-      & > div {
+      & > span {
+        font-size: 16px;
         visibility: hidden;
       }
     }
-    &:hover .zola-anchor > div {
+    &:hover .zola-anchor > span {
       visibility: visible;
     }
   }
