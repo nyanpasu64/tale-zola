@@ -142,6 +142,9 @@
     margin-bottom: 1.4em;
   }
 
+  sup.footnote-reference {
+    line-height: 1;
+  }
   sup.footnote-reference a {
     &::before {
       content: "[";
