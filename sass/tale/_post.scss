@@ -141,4 +141,13 @@
     margin-top: 1.5em;
     margin-bottom: 1.4em;
   }
+
+  sup.footnote-reference a {
+    &::before {
+      content: "[";
+    }
+    &::after {
+      content: "]";
+    }
+  }
 }
