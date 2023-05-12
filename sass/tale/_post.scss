@@ -62,6 +62,7 @@
 
       > span {
         font-size: 16px;
+        display: inline-block;
       }
     }
   }
@@ -76,6 +77,10 @@
         margin-left: -22px;
 
         > span {
+          // On Windows 10 emoji, a 16px tall anchor is actually 22x22.
+          // Force the width to 16px to prevent it from pushing text to
+          // the right.
+          width: 16px;
           visibility: hidden;
         }
       }
