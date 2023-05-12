@@ -18,6 +18,7 @@ code {
   border-radius: 4px;
   padding: 2px 5px;
   background-color: $code-bg;
+  white-space: pre-wrap;
 }
 
 pre {
@@ -30,6 +31,7 @@ pre {
 
 pre code {
   background-color: transparent;
+  white-space: unset;
   font-size: unset;
   color: inherit;
   border: 0;
