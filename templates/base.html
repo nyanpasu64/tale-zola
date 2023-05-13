@@ -7,7 +7,7 @@
 
   {% block seo %}
     {%- set site_url = current_url | default(value=get_url(path="404.html")) -%}
-    {% set author = config.extra.author | default(value="") -%}
+    {% set author = config.author | default(value="") -%}
     {% set description = config.description | default(value="") -%}
     {% set image = config.extra.seo.image | default(value="") -%}
     {% set image_height = config.extra.seo.image_height | default(value=0) -%}
