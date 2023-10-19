@@ -34,6 +34,13 @@
     }
   }
 
+  // When jumping to a footnote, highlight the footnote definition.
+  // TODO should we highlight a heading when we jump to it? If we enabled it now, the
+  // highlights are too wide and vertically imbalanced...
+  :target.footnote-definition {
+    background-color: #ffb;
+  }
+
   // // Text appears above the center of its bounding box. Decrease the lower margin to 60%,
   // // to make headers look more balanced.
   // //
