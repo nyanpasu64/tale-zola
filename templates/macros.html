@@ -9,7 +9,7 @@
     <h2 class="catalogue-title">{{ page.title }}</h2>
     <div class="catalogue-line"></div>
     {%- if page.summary -%}
-      <p>{{ page.summary | striptags | safe }}</p>
+      <p>{{ page.summary | striptags | linebreaksbr | safe }}</p>
     {% else -%}
       <p>{{ page.content | striptags | truncate(length=280) | safe }}</p>
     {%- endif -%}
