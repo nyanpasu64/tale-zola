@@ -29,6 +29,10 @@ pre {
   // line-height: 1.5;
 }
 
+p + pre {
+  margin-top: 18px;
+}
+
 pre code {
   background-color: transparent;
   white-space: unset;
