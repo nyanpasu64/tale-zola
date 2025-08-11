@@ -1,43 +1,41 @@
-.catalogue {
-  &-item {
-    border-bottom: 1px solid $grey-2;
+.catalogue-item {
+  border-bottom: 1px solid $grey-2;
 
-    // CSS is so hacky... it conflates selecting and prioritizing rules. Overriding the
-    // color of `a:visited` outweighs class-level colors but not nested class colors.
-    // Supposedly https://css-tricks.com/css-cascade-layers/
-    // (https://developer.mozilla.org/en-US/docs/Web/CSS/@layer) fixes it. But only very
-    // recent browsers support it.
-    &, &:visited {
-      color: $default-color;
-    }
-
-    display: block;
-    padding: 2rem 0;
-
-    &:hover .catalogue-line,
-    &:focus .catalogue-line {
-      width: 5rem;
-    }
-
-    &:last-child {
-      border: 0;
-    }
-    > div > :last-child {
-      margin-bottom: 0;
-    }
+  // CSS is so hacky... it conflates selecting and prioritizing rules. Overriding the
+  // color of `a:visited` outweighs class-level colors but not nested class colors.
+  // Supposedly https://css-tricks.com/css-cascade-layers/
+  // (https://developer.mozilla.org/en-US/docs/Web/CSS/@layer) fixes it. But only very
+  // recent browsers support it.
+  &, &:visited {
+    color: $default-color;
   }
 
-  &-pinned {
+  display: block;
+  padding: 2rem 0;
+
+  &:hover .catalogue-line,
+  &:focus .catalogue-line {
+    width: 5rem;
+  }
+
+  &:last-child {
+    border: 0;
+  }
+  > div > :last-child {
+    margin-bottom: 0;
+  }
+
+  .catalogue-pinned {
     color: $default-tint;
     font-family: $serif-secondary;
   }
 
-  &-time {
+  .catalogue-time {
     color: $default-tint;
     font-family: $serif-secondary;
   }
 
-  &-title {
+  .catalogue-title {
     color: $default-shade;
     display: block;
     font-family: $sans-serif;
@@ -46,7 +44,7 @@
     margin: .5rem 0;
   }
 
-  &-line {
+  .catalogue-line {
     @include transition(all .3s ease-out);
     border-top: .2rem solid $default-shade;
     display: block;
