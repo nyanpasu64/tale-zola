@@ -4,10 +4,9 @@
     {%- if config.extra.expressions.pinned -%}
       <span class="catalogue-pinned">{{ config.extra.expressions.pinned }} &middot;</span>
     {%- endif -%}
+    <h2 class="catalogue-title">{{ page.title }}</h2>
     <time datetime="{{ page.date }}" class="catalogue-time">{{ page.date | date(format=config.extra.timeformat |
       default(value="%B %e, %Y")) }}</time>
-    <h2 class="catalogue-title">{{ page.title }}</h2>
-    <div class="catalogue-line"></div>
     {%- if page.summary -%}
       <p>{{ page.summary | striptags | trim | linebreaksbr | safe }}</p>
     {% else -%}
