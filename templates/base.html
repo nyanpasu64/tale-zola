@@ -46,6 +46,10 @@
       <a href="{{ config.base_url | safe }}">
         <h2 class="nav-title">{{ config.title | default(value="Tale-Zola")}}</h2>
       </a>
+      {% if config.extra.subtitle %}
+        {# https://css-tricks.com/html-for-subheadings-and-headings/ #}
+        <div role="doc-subtitle">{{ config.extra.subtitle }}</div>
+      {% endif %}
       <ul>
         {% if config.extra.menu %}
           {% for menu in config.extra.menu %}

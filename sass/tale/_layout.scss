@@ -21,15 +21,19 @@ footer,
   box-shadow: 0 2px 2px -2px $shadow-color;
   overflow: auto;
 
-  &-container {
+  .nav-container {
     // Add more room above than below text, to make it look visually centered.
     // https://tonsky.me/blog/font-size/#the-endgame
-    margin: 1.05rem auto 0.85rem;
+    margin: 1rem auto 0.9rem;
     position: relative;
     text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
   }
 
-  &-title {
+  .nav-title {
     @include transition(all .2s ease-out);
     color: $default-color;
     display: inline-block;
@@ -42,9 +46,17 @@ footer,
     }
   }
 
+  // https://css-tricks.com/html-for-subheadings-and-headings/
+  [role="doc-subtitle"] {
+    font-family: $sans-serif;
+    display: inline-block;
+    // color: $grey-1;
+    opacity: .6;
+  }
+
   ul {
     list-style-type: none;
-    margin: 1rem 0 0;
+    margin: 0.25rem 0 0;
     padding: 0;
     text-align: center;
   }
@@ -70,21 +82,23 @@ footer,
     color: $default-color;
     font-family: $sans-serif;
   }
-}
 
-@media (min-width: $desktop-min) {
-  .nav-container {
-    text-align: left;
-    display: flex;
-    align-items: center;
+  @media (min-width: $desktop-min) {
+    .nav-container {
+      flex-direction: row;
+      text-align: left;
+      display: flex;
+      align-items: center;
+    }
 
-    :first-child {
-      margin-right: auto;
+    [role="doc-subtitle"] {
+      margin-top: 0.2em;
     }
 
     ul {
-      margin: 0;
+      margin: 0.2em 0 0 auto;
     }
+
   }
 }
 
