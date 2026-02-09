@@ -16,7 +16,7 @@ $code-color: $default-color !default;
 $serif-primary: "Crimson Pro", "Source Serif Pro", 'Times New Roman', Times, serif, "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei UI", "Microsoft YaHei", '微软雅黑', '思源黑体', SYHT, "WenQuanYi Micro Hei" !default;
 $serif-secondary: $serif-primary !default;
 $sans-serif: 'Helvetica Neue', 'Segoe UI', "Arimo", "Liberation Sans", Arial, Helvetica, sans-serif !default;
-$monospaced: "IBM Plex Mono", Menlo, Monaco, "DejaVu Sans Mono", Consolas, monospace !default;
+$monospaced: "mononoki", "IBM Plex Mono", Consolas, "DejaVu Sans Mono", Menlo, Monaco, Courier, monospace !default;
 
 @mixin box-sizing($type: border-box) {
   -webkit-box-sizing: $type;
