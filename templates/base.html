@@ -1,4 +1,3 @@
-{% import 'macros.html' as macros %}
 <!DOCTYPE html>
 <html lang="{{ config.extra.language_code | default(value="en") }}">
 <head>
@@ -9,9 +8,9 @@
     {%- set site_url = current_url | default(value=get_url(path="404.html")) -%}
     {% set author = config.author | default(value="") -%}
     {% set description = config.description | default(value="") -%}
-    {% set image = config.extra.seo.image | default(value="") -%}
-    {% set image_height = config.extra.seo.image_height | default(value=0) -%}
-    {% set image_width = config.extra.seo.image_width | default(value=0) -%}
+    {% set image = config.extra.seo?.image | default(value="") -%}
+    {% set image_height = config.extra.seo?.image_height | default(value=0) -%}
+    {% set image_width = config.extra.seo?.image_width | default(value=0) -%}
   {% endblock seo %}
 
   <link rel="stylesheet" href="{{ get_url(path="main.css") | safe }}">
@@ -73,7 +72,7 @@
   <footer>
     <span>
       {%- if config.extra.footer.info -%}
-        {{ config.extra.footer.info ~ "<br>" | safe }}
+        {{ config.extra.footer.info | safe }}<br>
       {%- endif -%}
       Made with <a href="https://www.getzola.org">Zola</a> using the
       <a href="https://github.com/aaranxu/tale-zola">Tale-Zola</a> theme
